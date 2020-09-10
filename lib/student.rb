@@ -23,7 +23,8 @@ class Student
  def self.drop_table
     sql = <<-SQL
       DROP TABLE students
-        SQL
+      SQL
+      
       DB[:conn].execute(sql)
   end
     
@@ -43,13 +44,10 @@ class Student
     student.save
     student
   end
-#name: "Sally", grade: "10th")
+
 end
 
 
 
   
-  
-  # Remember, you can access your database connection anywhere in this class
-  #  with DB[:conn]  
   
